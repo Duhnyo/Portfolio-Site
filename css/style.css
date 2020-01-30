@@ -1,5 +1,5 @@
 body {
-  background-color: #f2f2f2;
+  background-color: #EDE6E3;
   padding: 10px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -29,4 +29,54 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 350;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #1D70A2;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #DB93B0;
+}
+
+a:hover a:focus {
+  color: #69D1C5;
+}
+
+a:active {
+  color:#9B97B2;
+}
+
+
+.btn {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #1D70A2;
+  color: #ffffff !important; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #9B97B2; /* width of the border, type, color */
+  transition: 0.2s opacity;}
+
+
+.btn:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
+.btn.contact  {
+    background-color: transparent;
+    color: #1D70A2 !important;
+    border: 2px solid #1D70A2;
+  }
+
+.btn.contact:hover {
+  background-color: #1D70A2;
+  color:#fff!important;
+  opacity: 0.8;
+
 }
