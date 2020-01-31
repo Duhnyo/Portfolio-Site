@@ -7,17 +7,20 @@
    <title>Coding My Portfolio</title>
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
    <link rel="stylesheet" type="text/css" href="css/style.css">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
    <header>
-      <div class="">
-         <a href="index.html">Daniel Cheung</a>
+      <div>
+         <a href="index.html">
+            <picture>
+               <img src="img/dclogo.png" class="logo" alt="Daniel Cheung" id="headerimg">
+            </picture>
+         </a>
          <nav>
-            <ul>
+            <ul id="navlist">
                <li><a href="#projects">Work</a></li>
                <li><a href="about.html">About</a></li>
                <li><a href="#connect">Connect</a></li>
@@ -27,32 +30,37 @@
       </div>
    </header>
    <main>
-      <div class="">
-         <div>
+      <div id="hero">
+         <div class="container">
             <h1>Hi, my name is Daniel Cheung<br><span>I'm a UX Designer & Front-End Developer based in Santa Barbara.</span></h1>
             <p>
 
             </p>
          </div>
       </div>
-      <div class="">
-         <div class="">
-            <h2 id="projects">My Projects</h2>
+      <div id="projects" class="container">
+         <div>
+            <h2>My Projects</h2>
             <!--Start Project Entry Code-->
             <!--Project 1-->
-            <div class="">
-               <picture>
-                  <source srcset="img/sojourn/mockups_orangesplash.png" media="(max-width:767px)">
-                  <img src="img/sojourn/mockups_orangesplash.png" alt="My Image">
-               </picture>
-               <div class="">
-                  <div class="">
-                     <h3>Sojourn</h3>
+            <div class="row">
+               <!--- row 1 --->
+               <!---column 1 --->
+               <div id="sojourncontent">
+                  <picture>
+                     <source srcset="img/sojourn/mockups_orangesplash.png" media="(max-width:767px)">
+                     <img src="img/sojourn/mockups_orangesplash.png" alt="My Image">
+                  </picture>
+               </div>
+               <!---column 2 --->
+               <div>
+                  <h3>Sojourn</h3>
 
-
-                     <p>Food Discovery Experience : Revamped</p>
-                     <p>Sojourn is an app that's all about experience. Taking a geo-aware approach to food discovery, it encourages users to explore their locale for places they've never been to by gamifying the process of discovery. It's a scavenger
-                        hunt for trying food at places nearby. </p>
+                  <h4>Food Discovery Experience : Reimagined</h4>
+                  <p>Sojourn is an app that's all about experience. Taking a geo-aware approach to food discovery, it encourages users to explore their locale for places they've never been to by gamifying the process of discovery. It's a scavenger
+                     hunt for trying food at places nearby. </p>
+                  <br>
+                  <div class="btnalign">
                      <a href="sojourn.html" class="btn">View Project</a>
                   </div>
 
@@ -65,22 +73,24 @@
    </main>
 
    <footer>
-      <div class="">
+      <div class="container">
          <h2>Get In Touch</h2>
-         <p>Please don't hesitate to reach out if you like my work and want to discuss opportunities! Call:<a href="tel:1234567890">(123)456-7890</a>. <br> Prefer to email?
+         <p>Please don't hesitate to reach out if you like my work and want to discuss opportunities! Call: <a href="tel:1234567890">(123)456-7890</a>. <br> Prefer to email?
 
          </p>
-         <div class="">
-            <a href="mailto:noreply@danieux.tech?subject=Reaching Out" class="btn contact">Email Me</a>
-         </div>
-         <div class="">
-            <h2 id="connect">Connect With Me</h2>
-            <a href="https://www.instagram.com" <i class="fa fa-instagram fa-2x"></i></a>
-            <a href="https://www.dribbble.com"><i class="fa fa-dribbble fa-2x"></i></a>
-            <a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a>
-         </div>
+      </div>
+      <div>
+         <a href="mailto:noreply@danieux.tech?subject=Reaching Out" class="btn contact">Email Me</a>
+      </div>
+      <br>
+      <div class="connect social">
+         <a href="https://www.instagram.com" <i class="fa fa-instagram fa-2x"></i></a>
+         <a href="https://www.dribbble.com"><i class="fa fa-dribbble fa-2x"></i></a>
+         <a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a>
          <p>Copryright Notice - Daniel Cheung - 2020</p>
       </div>
+
+
    </footer>
 </body>
 

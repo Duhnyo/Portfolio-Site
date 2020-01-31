@@ -1,6 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #DCEDFF;
+  text-align: center;
+  padding: 10px 0!important;
+  margin:0;
+  position:relative;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.20);
+  -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.20);
+  box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.20);
+}
+
+nav {
+  display:inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#hero {
+  background-color: #DCEDFF
+}
+
+#hero h1 {
+  text-align: center;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
 body {
-  background-color: #EDE6E3;
-  padding: 10px;
+  background-color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -40,10 +85,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: #DB93B0;
-}
-
 a:hover a:focus {
   color: #69D1C5;
 }
@@ -61,7 +102,8 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #9B97B2; /* width of the border, type, color */
-  transition: 0.2s opacity;}
+  transition: 0.2s opacity;
+}
 
 
 .btn:hover {
@@ -72,6 +114,7 @@ a:active {
     background-color: transparent;
     color: #1D70A2 !important;
     border: 2px solid #1D70A2;
+    transition: 0.2s background-color;
   }
 
 .btn.contact:hover {
@@ -79,4 +122,57 @@ a:active {
   color:#fff!important;
   opacity: 0.8;
 
+}
+
+.logo {
+  max-width: 250px;
+}
+
+#navlist {
+  font-weight: 400;
+}
+
+/** #headerimg {
+  width: 15%;
+
+}**/
+
+/* Layout Styling */
+.container {
+  padding: 0 15px;
+}
+
+#projects .row {
+   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+   padding-bottom: 25px;
+   border-bottom: 1px solid #4a4a4a;
+}
+
+#projects > h2, > h3, > h4, > p {
+  text-align: center;
+  margin: 0.75em;
+}
+
+.btnalign {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  position: relative;
+}
+
+.connect {
+  background-color: #DCEDFF;
+  padding: 10px 0;
+  margin: 5px 0;
+  -webkit-box-shadow: 0px -5px 5px 0px rgba(50, 50, 50, 0.20);
+  -moz-box-shadow:    0px -5px 5px 0px rgba(50, 50, 50, 0.20);
+  box-shadow:         0px -5px 5px 0px rgba(50, 50, 50, 0.20);
+
+}
+
+.social {
+  padding: 10px 0;
+  margin: 10px 0;
 }
