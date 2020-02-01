@@ -57,19 +57,19 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.50em;
   font-weight: 700;
   color: #5798ff;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.0em;
   font-weight: 600;
 }
 
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 500;
 }
 h4 {
   font-size: 1.35em;
@@ -153,6 +153,7 @@ a:active {
   margin: 0.75em;
 }
 
+
 .btnalign {
   text-align: center;
 }
@@ -165,7 +166,6 @@ footer {
 .connect {
   background-color: #DCEDFF;
   padding: 10px 0;
-  margin: 5px 0;
   -webkit-box-shadow: 0px -5px 5px 0px rgba(50, 50, 50, 0.20);
   -moz-box-shadow:    0px -5px 5px 0px rgba(50, 50, 50, 0.20);
   box-shadow:         0px -5px 5px 0px rgba(50, 50, 50, 0.20);
@@ -174,5 +174,110 @@ footer {
 
 .social {
   padding: 10px 0;
-  margin: 10px 0;
+}
+
+.projectimg {
+  width: 100%;
+  max-width:650px;
+  text-align: center;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0px 10px;
+}
+
+.row {
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.skillstools {
+  list-style-type: none;
+  padding-right: 40px;
+  margin-top: 5px;
+}
+
+.resume {
+  text-align: center;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  margin-top: -10px;
+}
+
+nav {
+  width: auto;
+    float: right;
+    margin-top: 45px;
+    margin-right: 20px;
+}
+
+.col-md-6 {
+  width:50%;
+}
+
+.projectimg {
+  width: 100%;
+}
+
+#sojourncontent {
+  margin-top: -3px;
+}
+
+#about-page h3 {
+  margin-top: 0;
+}
+
+
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+.col-lg-7 {
+  width: 60%;
+}
+
+.col-lg-5 {
+  width: 40%;
+}
+
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
