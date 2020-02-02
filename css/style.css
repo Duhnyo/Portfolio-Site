@@ -4,8 +4,7 @@
 
 header {
   background-color: #DCEDFF;
-  text-align: center;
-  padding: 10px 0!important;
+  padding:0!important;
   margin:0;
   position:relative;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.20);
@@ -13,24 +12,65 @@ header {
   box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.20);
 }
 
-nav {
+/*nav {
   display:inline-block;
   width: 100%;
-}
+}*/
 
 nav > ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
+
 
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  text-align: center;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #1D70A2;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.logo {
+  max-width: 75px;
+}
+
+
+#navlist {
+  font-weight: 400;
+  margin: 0;
 }
 
 #hero {
@@ -125,13 +165,7 @@ a:active {
 
 }
 
-.logo {
-  max-width: 250px;
-}
 
-#navlist {
-  font-weight: 400;
-}
 
 /** #headerimg {
   width: 15%;
@@ -235,6 +269,26 @@ footer {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+svg {
+  margin: 0;
+  padding-left:30px;
+  height: 250px;
+  width:100%;
+}
+
+/* ==============================
+Small Devices up to 640px
+================================= */
+@media only screen and (max-width: 639px) {
+  #svganimation {
+    width: 100%;
+  }
+}
+
+
+
+
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -246,8 +300,20 @@ header {
   padding: 20px 0 13px;
 }
 
+nav > ul {
+  margin: 1em 0;
+}
+
 .logo {
   max-width: 150px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
 }
 
 h2 {
@@ -256,6 +322,7 @@ h2 {
 
 h4 {
   margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 nav {
@@ -263,6 +330,10 @@ nav {
     float: right;
     margin-top: 45px;
     margin-right: 20px;
+}
+
+nav > ul > li {
+  display: inline-block;
 }
 
 .col-md-6 {
@@ -283,7 +354,11 @@ nav {
 
 
 
+
 }
+
+
+
 
 /* ==============================
 Large devices (1024px or larger)

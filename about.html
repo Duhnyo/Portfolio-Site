@@ -14,20 +14,22 @@
 
 <body id="about-page">
    <header>
-      <div>
-         <a href="index.html">
-            <picture>
-               <img src="img/dclogo.png" class="logo" alt="Daniel Cheung" id="headerimg">
-            </picture>
-         </a>
-         <nav>
-            <ul id="navlist">
-               <li><a href="index.html#projects">Work</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="#connect">Connect</a></li>
-            </ul>
-
-         </nav>
+      <div class="navtoggle" id="myNavtoggle">
+         <div>
+            <a href="index.html">
+               <picture>
+                  <img src="img/dclogo.png" class="logo" alt="Daniel Cheung" id="headerimg">
+               </picture>
+            </a>
+            <nav>
+               <ul id="navlist">
+                  <li><a href="index.html#projects">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#connect">Connect</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa fa-bars 2x"></i></a></li>
+               </ul>
+            </nav>
+         </div>
       </div>
    </header>
    <main>
@@ -93,7 +95,6 @@
 
       </div>
 
-      </div>
 
 
 
@@ -117,6 +118,7 @@
          </div>
       </div>
    </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
    <script src="js/scripts.js" charset="utf-8">
    </script>
 </body>
