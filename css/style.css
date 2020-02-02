@@ -102,7 +102,8 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #9B97B2; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 
@@ -114,7 +115,7 @@ a:active {
     background-color: transparent;
     color: #1D70A2 !important;
     border: 2px solid #1D70A2;
-    transition: 0.2s background-color;
+    transition: 0.4s background-color;
   }
 
 .btn.contact:hover {
@@ -205,6 +206,33 @@ footer {
 
 .resume {
   text-align: center;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 
