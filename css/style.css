@@ -54,7 +54,6 @@ nav > ul > li > a {
   padding: 24px 0 0;
 }
 .navtoggle.responsive li  {
-  display: block;
   padding: 10px 0;
   border-top: 1px solid #1D70A2;
 }
@@ -113,7 +112,7 @@ h3 {
 }
 h4 {
   font-size: 1.35em;
-  font-weight: 350;
+  font-weight: 300;
 }
 
 img {
@@ -183,7 +182,7 @@ a:active {
    border-bottom: 1px solid #4a4a4a;
 }
 
-#projects > h2, > h3, > h4, > p {
+#projects h2, h3, h4, p {
   text-align: center;
   margin: 0.75em;
 }
