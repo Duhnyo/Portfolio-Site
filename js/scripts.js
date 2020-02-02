@@ -7,3 +7,16 @@ function menuToggle() {
     x.className = 'navtoggle';
   }
 }
+
+$(a[ref*="#"]).on('click') function(e)
+{
+  e.preventDefault()
+
+  $('html, body').animate(
+    {
+      scrolTop:$($(this).attr('href')).offset().top,
+    }
+    5,
+    'linear'
+  )
+}
