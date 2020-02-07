@@ -210,11 +210,11 @@ footer {
   padding: 10px 0;
 }
 
-.projectimg {
+/*.projectimg {
   width: 100%;
   max-width:650px;
   text-align: center;
-}
+}*/
 
 [class*="col-"] {
   float: left;
